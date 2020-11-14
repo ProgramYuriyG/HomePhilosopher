@@ -20,7 +20,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="a0a7b0b6-6d0e-4479-b871-4f9222a43eb3" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/countymap/countymapperapp/templates/county_details.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/countymap/countymapperapp/urls.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/HomePhilosopher.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/HomePhilosopher.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/HomePhilosopher/Api_Connector/api_communicator.py" beforeDir="false" afterPath="$PROJECT_DIR$/HomePhilosopher/Api_Connector/api_communicator.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/HomePhilosopher/__main__.py" beforeDir="false" afterPath="$PROJECT_DIR$/HomePhilosopher/__main__.py" afterDir="false" />
@@ -34,6 +36,7 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="Python Script" />
+        <option value="HTML File" />
       </list>
     </option>
   </component>
@@ -46,9 +49,11 @@
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
+    <property name="DefaultHtmlFileTemplate" value="HTML File" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../VK Projects/zzz_ testing" />
+    <property name="TERMINAL_CUSTOM_COMMANDS_GOT_IT" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../VK Projects/zillowsystem" />
     <property name="settings.editor.selected.configurable" value="configurable.group.appearance" />
   </component>
   <component name="RunManager" selected="Python.api_communicator">
@@ -130,13 +135,15 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="487" y="9" key="#__main__/0.0.1536.824/3840.0.1366.687@0.0.1536.824" timestamp="1605328126711" />
-    <state x="487" y="9" key="#api_communicator" timestamp="1605329695119">
+    <state x="487" y="9" key="#api_communicator" timestamp="1605340657753">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="487" y="9" key="#api_communicator/0.0.1536.824/3840.0.1366.687@0.0.1536.824" timestamp="1605329695119" />
-    <state x="550" y="168" key="FileChooserDialogImpl" timestamp="1605329941112">
+    <state x="487" y="9" key="#api_communicator/0.0.1536.824@0.0.1536.824" timestamp="1605340657753" />
+    <state x="550" y="168" key="FileChooserDialogImpl" timestamp="1605374148736">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="550" y="168" key="FileChooserDialogImpl/0.0.1536.824/3840.0.1366.687@0.0.1536.824" timestamp="1605329941112" />
+    <state x="550" y="168" key="FileChooserDialogImpl/0.0.1536.824@0.0.1536.824" timestamp="1605374148735" />
   </component>
 </project>

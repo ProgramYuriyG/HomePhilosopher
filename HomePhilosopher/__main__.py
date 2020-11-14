@@ -1,4 +1,5 @@
-from HomePhilosopher.Api_Connector.api_communicator import get_crime_statistics
+from HomePhilosopher.Api_Connector.api_communicator import get_address_information
 
 if __name__ == '__main__':
-    get_crime_statistics()
+    # get_address_information('4050 harwood rd', 'Cleveland, OH')
+    pass
