@@ -6,3 +6,4 @@ class County(models.Model):
     state_code = models.CharField(max_length=3)
     latitude = models.DecimalField(max_digits=7, decimal_places=4, null=True, blank=True)
     longitude = models.DecimalField(max_digits=7, decimal_places=4, null=True, blank=True)
+
