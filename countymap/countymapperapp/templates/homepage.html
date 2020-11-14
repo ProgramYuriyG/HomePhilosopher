@@ -12,10 +12,30 @@
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/js/bootstrap.min.js"></script>
 
-        <!--    <style></style>-->
+        <style>
+            .centerImage {
+                max-width: 90%;
+                max-height: 90%;
+                bottom: 0;
+                left: 0;
+                margin: auto;
+                overflow: auto;
+                right: 0;
+                top: 0;
+                -o-object-fit: contain;
+                object-fit: contain;
+            }
+        </style>
     </head>
 
     <body>
-        <p>County Name: {{county.name}}</p>
+        <div class="container">
+            {% block header %}<h3 class="text-center">County Map</h3>{% endblock %}
+        </div>
+
+        <svg class="centerImage">
+            <image xlink:href="https://upload.wikimedia.org/wikipedia/commons/5/5f/USA_Counties_with_FIPS_and_names.svg" style="height: 100%;width: 100%"/>
+        </svg>
+
     </body>
 </html>
