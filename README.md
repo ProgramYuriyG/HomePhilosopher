@@ -1,5 +1,5 @@
 # HomePhilosopher
-A website designed for viewing the differences in environmental data, crime rates, and weather between various counties across the Unites States
+A website designed for viewing the differences in environmental data, crime rates, and weather between various counties across the Unites States. <br>
 
 
 Climate Data is gathered from https://app.climate.azavea.com/accounts/api/ <br>
