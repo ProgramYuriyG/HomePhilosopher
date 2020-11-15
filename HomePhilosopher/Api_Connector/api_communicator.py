@@ -6,6 +6,8 @@ from HomePhilosopher.Api_Connector.API_KEYS import Crime_API_KEY, Zillow_API_KEY
 # base imports
 import requests
 import json
+import pandas as pd
+import re
 
 '''
 Python File that will be used to communicate with the API's
@@ -206,10 +208,27 @@ def get_zip_code(lat, lon):
 
 
 def create_environmental_json(fips_code):
-    with open('environment_json.txt', 'r') as f:
-        environment_json = f.read()
-        environment_json = json.loads(environment_json)
+    state_code = int(fips_code[:2])
+    county_code = int(fips_code[2:])
 
-    for key, value in environment_json:
-        print(value)
-        break
+    df = pd.read_csv('pollution_data.csv')
+
+    env_json = {}
+    for index, row in df.iterrows():
+        if row['State Code'] == state_code and row['County Code'] == county_code:
+            parameter = row['Parameter Name']
+            units = row['Units of Measure']
+            mean = row['Arithmetic Mean']
+
+            if parameter in env_json:
+                env_json[parameter]['mean'].append(mean)
+            else:
+                env_json[parameter] = {}
+                env_json[parameter]['mean'] = [mean]
+                env_json[parameter]['units'] = units
+
+    for key, item in env_json.items():
+        if 'mean' in item:
+            env_json[key]['mean'] = sum(item['mean'])/len(item['mean'])
+
+    return env_json
