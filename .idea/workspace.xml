@@ -21,9 +21,9 @@
   <component name="ChangeListManager">
     <list default="true" id="a0a7b0b6-6d0e-4479-b871-4f9222a43eb3" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/HomePhilosopher/Api_Connector/api_communicator.py" beforeDir="false" afterPath="$PROJECT_DIR$/HomePhilosopher/Api_Connector/api_communicator.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/HomePhilosopher/__main__.py" beforeDir="false" afterPath="$PROJECT_DIR$/HomePhilosopher/__main__.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/environment_json.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/countymap/countymap/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/countymap/countymap/settings.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/countymap/countymapperapp/templates/homepage.html" beforeDir="false" afterPath="$PROJECT_DIR$/countymap/countymapperapp/templates/homepage.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -52,19 +52,20 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="TERMINAL_CUSTOM_COMMANDS_GOT_IT" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/countymap/countymap" />
     <property name="settings.editor.selected.configurable" value="preferences.sourceCode.HTML" />
   </component>
   <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\Yuriy Glukhov\Desktop\HomePhilosopher\countymap\countymap" />
+      <recent name="C:\Users\Yuriy Glukhov\Desktop\HomePhilosopher\countymap\countymapperapp\templates" />
+    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\Users\Yuriy Glukhov\Desktop\HomePhilosopher" />
       <recent name="C:\Users\Yuriy Glukhov\Desktop\HomePhilosopher\HomePhilosopher" />
       <recent name="C:\Users\Yuriy Glukhov\Desktop\HomePhilosopher\HomePhilosopher\Api_Connector" />
       <recent name="C:\Users\Yuriy Glukhov\Desktop\HomePhilosopher\countymap\countymapperapp" />
       <recent name="C:\Users\Yuriy Glukhov\Desktop\HomePhilosopher\countymap" />
-    </key>
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="C:\Users\Yuriy Glukhov\Desktop\HomePhilosopher\countymap\countymapperapp\templates" />
     </key>
   </component>
   <component name="RunManager" selected="Python.__main__">
