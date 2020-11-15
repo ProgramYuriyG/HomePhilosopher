@@ -20,10 +20,15 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="a0a7b0b6-6d0e-4479-b871-4f9222a43eb3" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/countymap/countymapperapp/static/home.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/countymap/countymapperapp/static/county_map_css.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/countymap/countymapperapp/static/grid.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/countymap/countymapperapp/static/homepage_css.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/countymap/countymapperapp/static/house_picture.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/countymap/countymapperapp/static/normalize.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/countymap/countymapperapp/templates/county_mapper.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/countymap/countymapperapp/templates/county_details.html" beforeDir="false" afterPath="$PROJECT_DIR$/countymap/countymapperapp/templates/county_details.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/countymap/countymapperapp/templates/homepage.html" beforeDir="false" afterPath="$PROJECT_DIR$/countymap/countymapperapp/templates/homepage.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/countymap/countymapperapp/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/countymap/countymapperapp/urls.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/countymap/countymapperapp/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/countymap/countymapperapp/views.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -34,8 +39,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="HTML File" />
         <option value="Python Script" />
+        <option value="HTML File" />
       </list>
     </option>
   </component>
@@ -63,9 +68,9 @@
       <recent name="C:\Users\Yuriy Glukhov\Desktop\HomePhilosopher\countymap\countymapperapp\templates" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\Yuriy Glukhov\Desktop\HomePhilosopher\countymap\countymapperapp\static" />
       <recent name="C:\Users\Yuriy Glukhov\Desktop\HomePhilosopher\countymap\countymapperapp" />
       <recent name="C:\Users\Yuriy Glukhov\Desktop\HomePhilosopher\countymap" />
-      <recent name="C:\Users\Yuriy Glukhov\Desktop\HomePhilosopher\countymap\countymapperapp\static" />
       <recent name="C:\Users\Yuriy Glukhov\Desktop\HomePhilosopher" />
       <recent name="C:\Users\Yuriy Glukhov\Desktop\HomePhilosopher\HomePhilosopher" />
     </key>

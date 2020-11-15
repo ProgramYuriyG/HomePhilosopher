@@ -11,8 +11,8 @@ import json
 def index(request):
     return redirect('homepage')
 
-# homepage that the user will see on page arrival
-def homepage(request):
+# county mapper page
+def county_mapper(request):
     if request.method == 'POST':
         pb = ParseBatch()
         pb.status = 1
@@ -47,6 +47,10 @@ def homepage(request):
                    }
         context.update(csrf(request))
         return render_to_response('county_details.html', context, RequestContext(request))
+    return render(request, 'county_mapper.html')
+
+# homepage that the user will see on page arrival
+def homepage(request):
     return render(request, 'homepage.html')
 
 # method to get the crime_stats
