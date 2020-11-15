@@ -46,6 +46,11 @@
         </form>
         </div>
 
+      {% if state_field %}
+          <div class="text-center">State: {{ state_field }}</div>
+          <div class="text-center">County: {{ county_field }}</div>
+      {% endif %}
+
         {% load static %}
         <object data="{% static 'USA_Counties_with_FIPS_and_names.svg' %}"  type="image/svg+xml">
             {% load static %}

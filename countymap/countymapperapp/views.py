@@ -1,17 +1,10 @@
-from django.shortcuts import render
+from django.shortcuts import render, render_to_response
 from django.shortcuts import redirect
 from django.http import HttpResponse
 from bs4 import BeautifulSoup
-from .models import County
+from django.template import RequestContext
 
-# base index page
-def index(request):
-    if request.method == 'POST':
-        print(request.POST.get('state_field'))
-        #if request.POST.get('submit_state_county_button'):
-        statefield = request.POST.get('state_field')
-        countyfield = request.POST.get('county_field')
-        print(f'hi{countyfield}, {statefield}')
+from .models import County
 
 # base index page
 def index(request):
@@ -19,6 +12,13 @@ def index(request):
 
 # homepage that the user will see on page arrival
 def homepage(request):
+    if request.method == 'POST':
+        statefield = request.POST.get('state_field')
+        countyfield = request.POST.get('county_field')
+        print(f'-{countyfield}, {statefield}')
+        context = {'state_field': statefield,
+                   'county_field': countyfield}
+        return render_to_response('homepage.html', context)
     return render(request, 'homepage.html')
 
 # method to return the county by id
