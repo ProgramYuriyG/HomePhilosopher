@@ -28,7 +28,7 @@ Python/Jquery/Javascript - for django template pages
 
 ### United States County Mapper
 
-![](/Home%20Philosopher%20Screenshots/county_map.PNG)
+![](/Home%20Philosopher%20Screenshots/county_map.png)
 
 ### County Comparison
 
