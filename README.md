@@ -34,3 +34,9 @@ Python/Jquery/Javascript - for django template pages
 ### County Comparison
 
 ![](/Home%20Philosopher%20Screenshots/county_details.PNG)
+
+
+### Future Implementations
+- Address Lookup
+- Connect with more Api's and lower call times
+- able to connect to houses for sale and have a comparison show up that way
