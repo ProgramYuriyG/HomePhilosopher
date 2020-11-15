@@ -22,3 +22,14 @@ Python/Jquery/Javascript - for django template pages
 - Now you can run the command: python manage.py runserver
 - Once this has finished, you can now go to your local host url (standard is: http://127.0.0.1:8000/)
 
+### Homepage
+
+![](/Home%20Philosopher%20Screenshots/homepage.PNG)
+
+### United States County Mapper
+
+![](/Home%20Philosopher%20Screenshots/county_map.PNG)
+
+### County Comparison
+
+![](/Home%20Philosopher%20Screenshots/county_details.PNG)
