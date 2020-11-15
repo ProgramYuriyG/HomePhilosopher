@@ -12,10 +12,58 @@
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/js/bootstrap.min.js"></script>
 
-        <!--    <style></style>-->
+        <style>
+
+            th{
+                text-align: center;
+            }
+        </style>
     </head>
 
     <body>
-        <p>County Name: {{county.name}}</p>
+        {% block header %}<h2 class="text-center">County Details</h2>{% endblock %}
+        <table class="text-center table table-bordered">
+            <tr>
+                <th>County</th>
+                {% for county in county_names %}
+                    <td>{{ county }}</td>
+                {% endfor %}
+            </tr>
+            <tr>
+                <th bgcolor="#b0b2b5" colspan="{{ county_names|length|add:1 }}">Crime Totals (Last 5 Years)</th>
+            </tr>
+            {% for offense_name in offense_types %}
+                <tr>
+                    <th>{{ offense_name }}</th>
+                    {% for offense in offense_objects %}
+                        {% if offense.name == offense_name %}
+                            <td>{{ offense.count }}</td>
+                        {% endif %}
+                    {% endfor %}
+                </tr>
+            {% endfor %}
+            <tr>
+                <th bgcolor="#b0b2b5" colspan="{{ county_names|length|add:1 }}">Weather (Last 5 Years)</th>
+            </tr>
+            <tr>
+                <th>Precipitation in inches (Last 5 Years)</th>
+                {% for precip in climate_objects %}
+                    <td>{{ precip.value }}</td>
+                {% endfor %}
+            </tr>
+            <tr>
+                <th bgcolor="#b0b2b5" colspan="{{ county_names|length|add:1 }}">Environment (2020)</th>
+            </tr>
+            {% for env_obj in environment_objects %}
+                <tr>
+                    <th>{{ env_obj.name }}</th>
+                    {% env_obj_comp in environment_objects %}
+                        {% if env_obj_comp.name == env_obj.name %}
+                            <td>{{ env_obj_comp.value }}  {{ env_obj_comp.units }}</td>
+                        {% endif %}
+                    {% endfor %}
+                </tr>
+            {% endfor %}
+        </table>
     </body>
 </html>

@@ -143,6 +143,7 @@
 2,170,PM2.5 - Local Conditions,Micrograms/cubic meter (LC),18.4
 2,170,PM2.5 - Local Conditions,Micrograms/cubic meter (LC),18.4
 2,170,PM2.5 - Local Conditions,Micrograms/cubic meter (LC),18.4
+3,1,PM2.5 - Local Conditions,Micrograms/cubic meter (LC),15.3
 4,1,PM10 Total 0-10um STP,Micrograms/cubic meter (25 C),9.795131
 4,1,PM10 Total 0-10um STP,Micrograms/cubic meter (25 C),9.795131
 4,1,PM10 Total 0-10um STP,Micrograms/cubic meter (25 C),9.285714
@@ -2501,6 +2502,7 @@
 6,113,PM2.5 - Local Conditions,Micrograms/cubic meter (LC),6.166667
 6,113,PM2.5 - Local Conditions,Micrograms/cubic meter (LC),6.166667
 6,113,PM2.5 - Local Conditions,Micrograms/cubic meter (LC),6.166667
+7,1,PM2.5 - Local Conditions,Micrograms/cubic meter (LC),4.71288
 8,1,Sample Flow Rate- CV,Percent,0.452941
 8,1,Sample Volume,Cubic meter,24
 8,1,Average Ambient Temperature,Degrees Centigrade,3.752941
@@ -3114,6 +3116,7 @@
 8,123,Wind Direction - Resultant,Degrees Compass,208.156528
 8,123,Std Dev Hz Wind Direction,Degrees Compass,22.991528
 8,123,Outdoor Temperature,Degrees Fahrenheit,31.965972
+9,1,Outdoor Temperature,Degrees Fahrenheit,32.763972
 10,1,Wind Speed - Resultant,Knots,5.821295
 10,1,Wind Direction - Resultant,Degrees Compass,223.716954
 10,1,PM2.5 - Local Conditions,Micrograms/cubic meter (LC),7.472507
@@ -3754,6 +3757,7 @@
 13,303,PM2.5 - Local Conditions,Micrograms/cubic meter (LC),7.313636
 13,303,PM2.5 - Local Conditions,Micrograms/cubic meter (LC),7.313636
 13,303,PM2.5 - Local Conditions,Micrograms/cubic meter (LC),7.313636
+14,1,Sulfur dioxide,Parts per billion,1.785763
 15,1,Sulfur dioxide,Parts per billion,1.745763
 15,1,Sulfur dioxide,Parts per billion,0.224012
 15,1,Sulfur dioxide,Parts per billion,0.223729
@@ -5766,6 +5770,7 @@
 19,193,PM2.5 - Local Conditions,Micrograms/cubic meter (LC),7.035484
 19,193,PM2.5 - Local Conditions,Micrograms/cubic meter (LC),7.035484
 19,193,PM2.5 - Local Conditions,Micrograms/cubic meter (LC),7.035484
+20,193,PM2.5 - Local Conditions,Micrograms/cubic meter (LC),7.832484
 21,13,PM2.5 - Local Conditions,Micrograms/cubic meter (LC),7.54
 21,13,PM2.5 - Local Conditions,Micrograms/cubic meter (LC),7.54
 21,13,PM2.5 - Local Conditions,Micrograms/cubic meter (LC),7.54
@@ -7071,6 +7076,7 @@
 28,81,Ozone,Parts per million,0.034645
 28,81,Ozone,Parts per million,0.034645
 28,81,Ozone,Parts per million,0.033967
+29,01,Ozone,Parts per million,0.026152
 30,13,Acceptable PM2.5 AQI & Speciation Mass,Micrograms/cubic meter (LC),5.191164
 30,13,Acceptable PM2.5 AQI & Speciation Mass,Micrograms/cubic meter (LC),5.148333
 30,27,Nitric oxide (NO),Parts per billion,0.102241
@@ -7659,6 +7665,8 @@
 32,33,Relative Humidity ,Percent relative humidity,51.049546
 32,33,Solar radiation,Langleys/minute,0.177872
 32,33,Rain/melt precipitation,Inches (rainfall),0.00021
+33,33,Rain/melt precipitation,Inches (rainfall),0.00019
+34,33,Rain/melt precipitation,Inches (rainfall),0.00024
 35,13,PM10 Total 0-10um STP,Micrograms/cubic meter (25 C),27.756881
 35,13,PM10 Total 0-10um STP,Micrograms/cubic meter (25 C),27.296703
 35,13,PM2.5 - Local Conditions,Micrograms/cubic meter (LC),4.922614
@@ -11676,6 +11684,7 @@
 42,49,Carbon monoxide,Parts per million,0.081345
 42,69,Carbon monoxide,Parts per million,0.162717
 42,69,Carbon monoxide,Parts per million,0.163567
+43,69,Carbon monoxide,Parts per million,0.171367
 44,3,Wind Speed - Resultant,Knots,2.074764
 44,3,Wind Direction - Resultant,Degrees Compass,200.491228
 44,3,Outdoor Temperature,Degrees Fahrenheit,33.994602
@@ -13952,6 +13961,7 @@
 49,57,PM2.5 - Local Conditions,Micrograms/cubic meter (LC),4.15124
 49,57,PM2.5 - Local Conditions,Micrograms/cubic meter (LC),4.15124
 49,57,PM2.5 - Local Conditions,Micrograms/cubic meter (LC),4.15124
+50,57,PM2.5 - Local Conditions,Micrograms/cubic meter (LC),3.87124
 51,3,PM2.5 - Local Conditions,Micrograms/cubic meter (LC),4.735
 51,3,PM2.5 - Local Conditions,Micrograms/cubic meter (LC),4.735
 51,3,PM2.5 - Local Conditions,Micrograms/cubic meter (LC),4.735
@@ -14085,6 +14095,7 @@
 51,810,PM2.5 - Local Conditions,Micrograms/cubic meter (LC),5.06
 51,810,PM2.5 - Local Conditions,Micrograms/cubic meter (LC),5.06
 51,840,PM10 Total 0-10um STP,Micrograms/cubic meter (25 C),6.615385
+52,810,PM2.5 - Local Conditions,Micrograms/cubic meter (LC),5.03
 53,1,Light scatter,Beta Scatter,0.036977
 53,1,Acceptable PM2.5 AQI & Speciation Mass,Micrograms/cubic meter (LC),2.345061
 53,1,Acceptable PM2.5 AQI & Speciation Mass,Micrograms/cubic meter (LC),2.293548
@@ -14573,6 +14584,7 @@
 54,107,Ozone,Parts per million,0.034667
 54,107,Ozone,Parts per million,0.034667
 54,107,Ozone,Parts per million,0.034533
+55,107,Ozone,Parts per million,0.036523
 56,1,Ozone,Parts per million,0.049254
 56,1,Ozone,Parts per million,0.047576
 56,1,Ozone,Parts per million,0.047576
