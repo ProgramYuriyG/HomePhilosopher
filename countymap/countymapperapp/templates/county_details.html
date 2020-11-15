@@ -13,6 +13,27 @@
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/js/bootstrap.min.js"></script>
 
         <style>
+            .form-horizontal{
+                display:block;
+                width:50%;
+                margin:0 auto;
+            }
+            .submit{
+                margin-left: 2.5%;
+            }
+            .thumbnail-image{
+                position: absolute;
+                width: 35px;
+                height 35px;
+                float: left;
+                display: inline-block;
+                margin: 0.5% 0.5%;
+            }
+
+            .table{
+                table-layout: fixed;
+                border-collapse: collapse;
+            }
 
             th{
                 text-align: center;
@@ -21,6 +42,8 @@
     </head>
 
     <body>
+        {% load static %}
+        <a href="../"><img class="thumbnail-image" src="{% static 'home.svg' %}"></a>
         {% block header %}<h2 class="text-center">County Details</h2>{% endblock %}
         <table class="text-center table table-bordered">
             <tr>

@@ -116,7 +116,6 @@ def get_environmental_data(fips_ids, pb):
                 precip.value = float(pol_data['mean'])
             except TypeError:
                 precip.value = float(pol_data['mean'][0])
-            print(precip.value)
             precip.save()
 
     # for fips_key, data in fips_pols.items():

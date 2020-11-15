@@ -13,17 +13,15 @@
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/js/bootstrap.min.js"></script>
 
         <style>
-            .centerImage {
-                max-width: 90%;
-                max-height: 90%;
-                bottom: 0;
-                left: 0;
+            .imgbox {
+                display: grid;
+                height: 100%;
+            }
+
+            .center-fit {
+                max-width: 100%;
+                max-height: 100vh;
                 margin: auto;
-                overflow: auto;
-                right: 0;
-                top: 0;
-                -o-object-fit: contain;
-                object-fit: contain;
             }
 
             svg{
@@ -39,6 +37,8 @@
                 width: 100%;
                 height: 100%;
             }
+
+            iframe {display: block; width: 100%; height: 100%; border: none;}
         </style>
     </head>
 
@@ -46,22 +46,12 @@
         <div class="container" width="100%">
             {% block header %}<h2 class="text-center">County Map</h2>{% endblock %}
         </div>
-        <h1 class="text-center" id="slow_warning" style="display:none">
-          Loading...
-        </h1>
-<!--        <div>-->
-<!--        <form method="post" action="#">-->
-<!--            {% csrf_token %}-->
-<!--            <input name="state_field" type="text" placeholder="state, e.g. OH, RI, HI, DC" maxlength="2" onkeyup="this.value = this.value.toUpperCase()" required><br>-->
-<!--            <input name="county_field" type="text" placeholder="county" onkeyup="this.value = this.value.toUpperCase()" required><br>-->
-<!--            <input name="submit_state_county_button" type="submit">-->
-<!--        </form>-->
-<!--        </div>-->
-
-<!--      {% if state_field %}-->
-<!--          <div class="text-center">State: {{ state_field }}</div>-->
-<!--          <div class="text-center">County: {{ county_field }}</div>-->
-<!--      {% endif %}-->
+        <div id="slow_warning" class="imgbox" style="display:none">
+            <h4 class="text-center">
+                Loading...
+            </h4>
+            <img class="center-fit" src="https://i.pinimg.com/originals/65/ba/48/65ba488626025cff82f091336fbf94bb.gif">
+        </div>
 
         <form id="form_post" method="post" action="#">
             {% csrf_token %}
@@ -95,8 +85,8 @@
 
                 const next = data_fill || color;
                 if(next != color){
-                    county_names.textContent = county_names.textContent.replaceAll(log_text, "");
-                    fips_ids.textContent = fips_ids.textContent.replaceAll(fips_log, "");
+                    county_names.value = county_names.value.replaceAll(log_text, "");
+                    fips_ids.value = fips_ids.value.replaceAll(fips_log, "");
                     log_county.textContent = log_county.textContent.replaceAll(log_text, "");
                 }
                 e.target.setAttribute('data-fill', prev);

@@ -20,10 +20,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="a0a7b0b6-6d0e-4479-b871-4f9222a43eb3" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/countymap/countymapperapp/static/home.svg" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/countymap/countymapperapp/migrations/0005_pollutant.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/countymap/countymapperapp/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/countymap/countymapperapp/models.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/countymap/countymapperapp/templates/county_details.html" beforeDir="false" afterPath="$PROJECT_DIR$/countymap/countymapperapp/templates/county_details.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/countymap/countymapperapp/templates/homepage.html" beforeDir="false" afterPath="$PROJECT_DIR$/countymap/countymapperapp/templates/homepage.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/countymap/countymapperapp/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/countymap/countymapperapp/views.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -53,7 +53,7 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="TERMINAL_CUSTOM_COMMANDS_GOT_IT" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../VK Projects/zzz_ testing" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/countymap/countymapperapp/static" />
     <property name="settings.editor.selected.configurable" value="preferences.sourceCode.HTML" />
   </component>
   <component name="RecentsManager">
