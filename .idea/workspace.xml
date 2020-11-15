@@ -20,12 +20,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="a0a7b0b6-6d0e-4479-b871-4f9222a43eb3" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/HomePhilosopher/Api_Connector/annual_conc_by_monitor_2020.csv" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/HomePhilosopher/Api_Connector/api_communicator.py" beforeDir="false" afterPath="$PROJECT_DIR$/HomePhilosopher/Api_Connector/api_communicator.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/HomePhilosopher/__main__.py" beforeDir="false" afterPath="$PROJECT_DIR$/HomePhilosopher/__main__.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/countymap/countymap/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/countymap/countymap/settings.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/countymap/countymapperapp/static/USA_Counties_with_FIPS_and_names.svg" beforeDir="false" afterPath="$PROJECT_DIR$/countymap/countymapperapp/static/USA_Counties_with_FIPS_and_names.svg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/countymap/countymapperapp/templates/homepage.html" beforeDir="false" afterPath="$PROJECT_DIR$/countymap/countymapperapp/templates/homepage.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/county_json.json" beforeDir="false" afterPath="$PROJECT_DIR$/county_json.json" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -59,16 +58,17 @@
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\Yuriy Glukhov\Desktop\HomePhilosopher" />
+      <recent name="C:\Users\Yuriy Glukhov\Desktop\HomePhilosopher\HomePhilosopher" />
+      <recent name="C:\Users\Yuriy Glukhov\Desktop\HomePhilosopher\HomePhilosopher\Api_Connector" />
       <recent name="C:\Users\Yuriy Glukhov\Desktop\HomePhilosopher\countymap\countymapperapp" />
       <recent name="C:\Users\Yuriy Glukhov\Desktop\HomePhilosopher\countymap" />
-      <recent name="C:\Users\Yuriy Glukhov\Desktop\HomePhilosopher\countymap\countymapperapp\templates" />
-      <recent name="C:\Users\Yuriy Glukhov\Desktop\HomePhilosopher\countymap\countymapperapp\templates\images" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\Users\Yuriy Glukhov\Desktop\HomePhilosopher\countymap\countymapperapp\templates" />
     </key>
   </component>
-  <component name="RunManager" selected="Python.api_communicator">
+  <component name="RunManager" selected="Python.__main__">
     <configuration name="__main__" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="HomePhilosopher" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -113,8 +113,8 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Python.api_communicator" />
         <item itemvalue="Python.__main__" />
+        <item itemvalue="Python.api_communicator" />
       </list>
     </recent_temporary>
   </component>
@@ -157,13 +157,29 @@
     </state>
     <state x="550" y="168" key="FileChooserDialogImpl/0.0.1536.824/3840.0.1366.687@0.0.1536.824" timestamp="1605387834694" />
     <state x="550" y="168" key="FileChooserDialogImpl/0.0.1536.824@0.0.1536.824" timestamp="1605374148735" />
+    <state width="1515" height="211" key="GridCell.Tab.0.bottom" timestamp="1605407457653">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1515" height="211" key="GridCell.Tab.0.bottom/0.0.1536.824/3840.0.1366.687@0.0.1536.824" timestamp="1605407457653" />
+    <state width="1515" height="211" key="GridCell.Tab.0.center" timestamp="1605407457653">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1515" height="211" key="GridCell.Tab.0.center/0.0.1536.824/3840.0.1366.687@0.0.1536.824" timestamp="1605407457653" />
+    <state width="1515" height="211" key="GridCell.Tab.0.left" timestamp="1605407457653">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1515" height="211" key="GridCell.Tab.0.left/0.0.1536.824/3840.0.1366.687@0.0.1536.824" timestamp="1605407457653" />
+    <state width="1515" height="211" key="GridCell.Tab.0.right" timestamp="1605407457653">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1515" height="211" key="GridCell.Tab.0.right/0.0.1536.824/3840.0.1366.687@0.0.1536.824" timestamp="1605407457653" />
     <state x="279" y="58" key="SettingsEditor" timestamp="1605388054593">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="279" y="58" key="SettingsEditor/0.0.1536.824/3840.0.1366.687@0.0.1536.824" timestamp="1605388054593" />
-    <state x="478" y="145" width="581" height="534" key="find.popup" timestamp="1605388417009">
+    <state x="478" y="145" width="581" height="534" key="find.popup" timestamp="1605402519554">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="478" y="145" width="581" height="534" key="find.popup/0.0.1536.824/3840.0.1366.687@0.0.1536.824" timestamp="1605388417009" />
+    <state x="478" y="145" width="581" height="534" key="find.popup/0.0.1536.824/3840.0.1366.687@0.0.1536.824" timestamp="1605402519554" />
   </component>
 </project>

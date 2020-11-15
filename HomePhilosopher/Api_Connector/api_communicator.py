@@ -1,7 +1,8 @@
 # package imports
 import collections
 
-from HomePhilosopher.Api_Connector.API_KEYS import Crime_API_KEY, Zillow_API_KEY, Rapid_API_KEY
+from HomePhilosopher.Api_Connector.API_KEYS import Crime_API_KEY, Zillow_API_KEY, Rapid_API_KEY, Climate_API_KEY, \
+    Google_API_KEY
 # base imports
 import requests
 import json
@@ -55,6 +56,8 @@ def get_crime_statistics(county, state_code):
     if not ori_list:
         raise Exception('County {} Is Not Found'.format(county))
 
+    ori_list = ori_list['ori']
+
     offense = 'rape'
     variable = 'count'
 
@@ -100,13 +103,18 @@ def create_county_dictionary():
         for state_key, agency_item in state_item.items():
             county_name = agency_item['county_name'].lower()
             state_abbr = agency_item['state_abbr'].lower()
+            latitude = agency_item['latitude']
+            longitude = agency_item['longitude']
             county_key = agency_item['ori']
 
             json_key = '{}{}'.format(county_name, state_abbr)
             if json_key in county_json:
-                county_json[json_key].append(county_key)
+                county_json[json_key]["ori"].append(county_key)
             else:
-                county_json[json_key] = [county_key]
+                county_json[json_key] = {}
+                county_json[json_key]["ori"] = [county_key]
+                county_json[json_key]["latitude"] = latitude
+                county_json[json_key]["longitude"] = longitude
 
     with open('county_json.json', 'w') as f:
         f.write(json.dumps(county_json, indent=4))
@@ -130,3 +138,78 @@ def get_address_information(address, zip_code):
     if response.status_code != 200:
         raise Exception('Zillow Invalid Status Code: {}'.format(response.status_code))
     print(response.text)
+
+
+# climate information (precipitation radar)
+def get_climate_information(lat, long):
+    url = 'https://app.climate.azavea.com/api/city/nearest?lat={lat}&lon={lon}'.format(lat=lat, lon=long)
+
+    headers = {
+        'Authorization': 'Token {}'.format(Climate_API_KEY)
+    }
+
+    session = requests.session()
+    response = session.get(url=url, headers=headers)
+
+    if response.status_code != 200:
+        raise Exception('Climate Invalid Status Code: {}'.format(response.status_code))
+
+    city = json.loads(response.content)
+    city = city['features'][0]['id']
+
+    if not city:
+        raise Exception('Climate Location ID Not Found')
+
+    # scenario is RCP85 or historical
+    url = "https://app.climate.azavea.com/api/climate-data/{city}/{scenario}?variables=pr&years=2010%3A2020&agg=avg"
+    url = url.format(city=city, scenario='RCP85')
+
+    response = session.get(url=url, headers=headers)
+
+    if response.status_code != 200:
+        raise Exception('Climate Invalid Status Code: {}'.format(response.status_code))
+
+    climate_source = json.loads(response.content)
+    year_data = {}
+
+    if 'data' not in climate_source:
+        raise Exception('Data Not Found For {}/{}'.format(lat, long))
+
+    climate_data = climate_source['data']
+    for year in climate_data:
+        year_sum = 0.0
+        for pr in climate_data[year]['pr']:
+            if pr:
+                year_sum += float(pr)
+        year_data[year] = year_sum
+
+    print(year_data)
+    return year_data
+
+
+# get the zip code from lat long; https://www.bigdatacloud.com/geocoding-apis/free-reverse-geocode-to-city-api
+def get_zip_code(lat, lon):
+    url = 'https://api.bigdatacloud.net/data/reverse-geocode-client?latitude={lat}&longitude={lon}&localityLanguage=en'
+    url = url.format(lat=lat, lon=lon)
+
+    session = requests.session()
+    response = session.get(url=url)
+
+    if response.status_code != 200:
+        raise Exception('Climate Invalid Status Code: {}'.format(response.status_code))
+
+    zip_source = json.loads(response.content)
+
+    zip_code = zip_source['postcode']
+
+    return zip_code
+
+
+def create_environmental_json(fips_code):
+    with open('environment_json.txt', 'r') as f:
+        environment_json = f.read()
+        environment_json = json.loads(environment_json)
+
+    for key, value in environment_json:
+        print(value)
+        break
