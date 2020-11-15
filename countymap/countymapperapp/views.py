@@ -1,10 +1,17 @@
 from django.shortcuts import render
+from django.shortcuts import redirect
 from django.http import HttpResponse
 from bs4 import BeautifulSoup
-
-
 from .models import County
-from django.shortcuts import redirect
+
+# base index page
+def index(request):
+    if request.method == 'POST':
+        print(request.POST.get('state_field'))
+        #if request.POST.get('submit_state_county_button'):
+        statefield = request.POST.get('state_field')
+        countyfield = request.POST.get('county_field')
+        print(f'hi{countyfield}, {statefield}')
 
 # base index page
 def index(request):
