@@ -23,7 +23,7 @@ class Offense(models.Model):
 class Precipitation(models.Model):
     run = models.ForeignKey(ParseBatch, on_delete=models.CASCADE)
     name = models.CharField(max_length=100)
-    value = models.DecimalField(max_digits=10, decimal_places=8)
+    value = models.DecimalField(max_digits=12, decimal_places=8)
     units = models.CharField(max_length=50)
     county_name = models.CharField(max_length=50)
     state_code = models.CharField(max_length=10)
@@ -32,6 +32,6 @@ class Precipitation(models.Model):
 class Pollutant(models.Model):
     run = models.ForeignKey(ParseBatch, on_delete=models.CASCADE)
     name = models.CharField(max_length=100)
-    value = models.DecimalField(max_digits=10, decimal_places=8)
+    value = models.DecimalField(max_digits=12, decimal_places=8)
     units = models.CharField(max_length=50)
     fips_code = models.CharField(max_length=10)

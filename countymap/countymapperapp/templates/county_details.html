@@ -57,7 +57,7 @@
             {% for env_obj in environment_objects %}
                 <tr>
                     <th>{{ env_obj.name }}</th>
-                    {% env_obj_comp in environment_objects %}
+                    {% for env_obj_comp in environment_objects %}
                         {% if env_obj_comp.name == env_obj.name %}
                             <td>{{ env_obj_comp.value }}  {{ env_obj_comp.units }}</td>
                         {% endif %}

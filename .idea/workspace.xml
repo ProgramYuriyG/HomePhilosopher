@@ -21,19 +21,10 @@
   <component name="ChangeListManager">
     <list default="true" id="a0a7b0b6-6d0e-4479-b871-4f9222a43eb3" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/HomePhilosopher/Api_Connector/annual_conc_by_monitor_2020.csv" beforeDir="false" afterPath="$PROJECT_DIR$/countymap/countymapperapp/annual_conc_by_monitor_2020.csv" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/HomePhilosopher/Api_Connector/api_communicator.py" beforeDir="false" afterPath="$PROJECT_DIR$/countymap/countymapperapp/api_communicator.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/HomePhilosopher/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/countymap/__init__.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/HomePhilosopher/__main__.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/agencies.json" beforeDir="false" afterPath="$PROJECT_DIR$/countymap/countymapperapp/agencies.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/county_json.json" beforeDir="false" afterPath="$PROJECT_DIR$/countymap/countymapperapp/county_json.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/countymap/countymap/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/countymap/countymap/urls.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/countymap/countymapperapp/migrations/0005_pollutant.py" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/countymap/countymapperapp/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/countymap/countymapperapp/models.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/countymap/countymapperapp/static/USA_Counties_with_FIPS_and_names.svg" beforeDir="false" afterPath="$PROJECT_DIR$/countymap/countymapperapp/static/USA_Counties_with_FIPS_and_names.svg" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/countymap/countymapperapp/templates/county_details.html" beforeDir="false" afterPath="$PROJECT_DIR$/countymap/countymapperapp/templates/county_details.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/countymap/countymapperapp/templates/homepage.html" beforeDir="false" afterPath="$PROJECT_DIR$/countymap/countymapperapp/templates/homepage.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/countymap/countymapperapp/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/countymap/countymapperapp/views.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pollution_data.csv" beforeDir="false" afterPath="$PROJECT_DIR$/countymap/countymapperapp/pollution_data.csv" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />

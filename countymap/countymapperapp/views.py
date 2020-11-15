@@ -116,18 +116,19 @@ def get_environmental_data(fips_ids, pb):
                 precip.value = float(pol_data['mean'])
             except TypeError:
                 precip.value = float(pol_data['mean'][0])
+            print(precip.value)
             precip.save()
 
-    for fips_key, data in fips_pols:
-        for pol, units in pollutants:
-            if pol not in data:
-                precip = Pollutant()
-                precip.run = pb
-                precip.name = pol
-                precip.units = units
-                precip.fips_code = fips_key
-                precip.value = -1.0
-                precip.save()
+    # for fips_key, data in fips_pols.items():
+    #     for pol, units in pollutants:
+    #         if pol not in data:
+    #             precip = Pollutant()
+    #             precip.run = pb
+    #             precip.name = pol
+    #             precip.units = units
+    #             precip.fips_code = fips_key
+    #             precip.value = -1.0
+    #             precip.save()
 
 
 # method to return the county by id
