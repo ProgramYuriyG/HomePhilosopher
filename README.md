@@ -1,9 +1,10 @@
 # HomePhilosopher
 A website designed for viewing the differences in environmental data, crime rates, and weather between various counties across the Unites States
 
-Climate Data is gathered from https://app.climate.azavea.com/accounts/api/
-Crime Data is gathered from https://crime-data-explorer.fr.cloud.gov/api
-Weather Data is gathered from https://www.ncdc.noaa.gov/
+
+Climate Data is gathered from https://app.climate.azavea.com/accounts/api/ <br>
+Crime Data is gathered from https://crime-data-explorer.fr.cloud.gov/api <br>
+Weather Data is gathered from https://www.ncdc.noaa.gov/ <br>
 
 ### Uses:
 Python/Django – used for requests to the api's along with building the web application and running the local server
