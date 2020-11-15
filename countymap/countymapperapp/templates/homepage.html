@@ -34,6 +34,21 @@
     </head>
 
     <body>
+        <div class="container" width="100%">
+            {% block header %}<h3 class="text-center">County Map</h3>{% endblock %}
+        </div>
+        <div>
+        <form method="post" action="#">
+            {% csrf_token %}
+            <input name="state_field" type="text" placeholder="state, e.g. OH, RI, HI, DC" maxlength="2" onkeyup="this.value = this.value.toUpperCase()" required><br>
+            <input name="county_field" type="text" placeholder="county" onkeyup="this.value = this.value.toUpperCase()" required><br>
+            <input name="submit_state_county_button" type="submit">
+        </form>
+        </div>
+
+
+        {% load static %}
+        <object data="{% static 'USA_Counties_with_FIPS_and_names.svg' %}"  type="image/svg+xml" style="width:100%;height:100%;">
         <div class="container">
             {% block header %}<h3 class="text-center">County Map</h3>{% endblock %}
         </div>
