@@ -33,7 +33,7 @@ Python/Jquery/Javascript - for django template pages
 
 ### County Comparison
 
-![](/Home%20Philosopher%20Screenshots/county_details.PNG)
+![](/Home%20Philosopher%20Screenshots/county_comparison.PNG)
 
 
 ### Future Implementations
